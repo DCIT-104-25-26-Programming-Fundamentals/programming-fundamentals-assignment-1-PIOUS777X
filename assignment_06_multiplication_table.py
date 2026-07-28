@@ -55,3 +55,39 @@
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
 # =============================================================================
 
+# Function for Part A
+def single_table():
+    number = int(input("Enter a number: "))
+
+    print("\nMultiplication Table for", number)
+
+    for i in range(1, 13):
+        print(number, "x", i, "=", number * i)
+
+
+# Function for Part B
+def multiple_tables():
+    n = int(input("\nEnter a positive number: "))
+
+    if n <= 0:
+        print("Error: Please enter a positive integer.")
+        return
+
+    for number in range(1, n + 1):
+        print("\nMultiplication Table for", number)
+
+        for i in range(1, 13):
+            print(number, "x", i, "=", number * i)
+
+        print("---------------------------")
+
+
+# ==========================
+# Main Program
+# ==========================
+
+print("PART A")
+single_table()
+
+print("\nPART B")
+multiple_tables()
